@@ -49,3 +49,5 @@ Waiting for deployments to stabilize...
 Deployments stabilized in 9.595825594s
 
 ```
+
+#### credit: app https://github.com/chukaofili/skaffold-example
