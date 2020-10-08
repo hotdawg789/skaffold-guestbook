@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: nodejs-guestbook-frontend
+        image: hotdawg789/nodejs-guestbook-frontend
         ports:
         - name: http-server
           containerPort: 8080

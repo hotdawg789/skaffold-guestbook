@@ -25,7 +25,7 @@ spec:
           - echo "Waiting for mongodb to start...";until (mongo --host nodejs-guestbook-mongodb:27017 >/dev/null 2>&1) do echo "Waiting for connection for 2 sec."; sleep 2; done
      containers:
       - name: backend
-        image: nodejs-guestbook-backend
+        image: hotdawg789/nodejs-guestbook-backend
         ports:
         - name: http-server
           containerPort: 8080
