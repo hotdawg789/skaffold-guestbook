@@ -1,0 +1,18 @@
+
+apiVersion: skaffold/v2beta8
+kind: Config
+build:
+  tagPolicy:
+    sha256: {}
+  # defines where to find the code at build time and where to push the resulting image
+  artifacts:
+  - image: hotdawg789/nodejs-guestbook-backend
+    context: src/backend
+  - image: hotdawg789/nodejs-guestbook-frontend
+    context: src/frontend
+
+# defines the Kubernetes manifests to deploy on each run
+deploy:
+  kubectl:
+    manifests:
+    - ./k8s/*
